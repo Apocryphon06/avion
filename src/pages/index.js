@@ -39,9 +39,13 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col justify-center items-center lg:mt-20 mt-10 lg:m-auto mx-5">
-        <h2 className="lg:text-2xl text-xl text-[#2A254B]">
+        {/* <h2 className="lg:text-2xl text-xl text-[#2A254B]">
           What makes our brand different
-        </h2>
+        </h2> */}
+        <h1 className="text-[#2A254B] lg:text-4xl md:text-3xl text-2xl">
+          {' '}
+          What makes our brand different
+        </h1>
 
         <div className="lg:w-[1290px] lg:m-auto mx-5">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 mt-10">
@@ -60,8 +64,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <br/>
-      <br/>
+      <br />
+      <br />
 
       <div className="lg:w-[1290px] lg:m-auto mx-5 flex flex-col justify-center items-center">
         <h2 className="lg:text-4xl md:text-3xl text-2xl text-[#2A254B]">
@@ -74,9 +78,15 @@ export default function Home() {
               key={index + 1 + item.name}
               className="flex flex-col justify-start items-start gap-2"
             >
-              <Image src={item.image} alt={item.name} width={292} height={359} className="object-fit w-[292px] h-[359px]"/>
-              <h3 className='text-lg'>{item.name}</h3>
-              <p className='text-base'>{item.price}</p>
+              <Image
+                src={item.image}
+                alt={item.name}
+                width={292}
+                height={359}
+                className="object-fit w-[292px] h-[359px]"
+              />
+              <h3 className="text-lg">{item.name}</h3>
+              <p className="text-base">{item.price}</p>
             </div>
           ))}
         </div>
